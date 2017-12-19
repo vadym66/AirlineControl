@@ -44,8 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AirlineFlight.cs" />
-    <Compile Include="AirLineList.cs" />
-    <Compile Include="IEditing.cs" />
+    <Compile Include="AirlineFlightRepository.cs" />
+    <Compile Include="IAirlineRepository.cs" />
+    <Compile Include="PassengerRepository.cs" />
+    <Compile Include="IPassengerRepository.cs" />
+    <Compile Include="OutputClass.cs" />
     <Compile Include="ServiceFlightClass.cs" />
     <Compile Include="StatusOfFlight.cs" />
     <Compile Include="Passenger.cs" />
@@ -53,7 +56,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

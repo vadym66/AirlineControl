@@ -6,13 +6,16 @@ using System.Threading.Tasks;
 
 namespace AirLine_Console
 {
-    interface IEditing
+    interface IAirlineRepository
     {
-
-        void Input();
+        void Add(AirlineFlight flight);
 
         void Delete();
 
         void Edit();
+
+        void Print();
+
+        void Search();
     }
 }
